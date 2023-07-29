@@ -10,7 +10,9 @@ h1 {
 body {
   font-family: "Avenir Next";
 }
-
+li{
+  list-style: none;
+}
 /* クラス */
 
 .headerLogo{       /* クラスは先頭に「.」をつける */
@@ -41,6 +43,16 @@ body {
   height:270px;
 }
 
-li{
-  list-style: none;
+.footerLogo{
+  font-size: 32px;
+  float: left;
+}
+
+.footerList
+.footer li{
+  float: right;
+}
+
+.footerList li {
+  padding-bottom:20px;
 }
