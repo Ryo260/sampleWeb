@@ -35,12 +35,15 @@ li{
 
 .main{
   background-color:#bdf7f1 ;
-  height:1200px;
+  height:1000px;
 }
 
 .footer{
-  background-color: #ceccf3;
-  height:270px;
+  background-color: #2f5167;
+
+  color: #fff;  
+  height: 120px;
+  padding: 40px;
 }
 
 .footerLogo{
@@ -48,8 +51,7 @@ li{
   float: left;
 }
 
-.footerList
-.footer li{
+.footerList {
   float: right;
 }
 
