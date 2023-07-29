@@ -1,11 +1,22 @@
+/* タグ */
 h1 {
   color:red;
 }
+
 
 .selected {
   color: blueviolet
 }
 
+/* クラス */
+.header-logo{
+  font-size:36px;
+  float:left;
+}
+.headerList{
+  float:left;
+
+}
 .header{
   background-color:#f7f2b4;
   height:90px;
