@@ -13,9 +13,9 @@ body {
 
 /* クラス */
 
-.header-logo{       /* クラスは先頭に「.」をつける */
+.headerLogo{       /* クラスは先頭に「.」をつける */
+  float: left;      /* リストを横並びにする*/
   font-size:36px;   /* 文字サイズ */
-  float:left;       /* リストを横並びにする*/
   padding:20px 40px; /*上下の余白*/
 }
 .headerLi{
@@ -25,7 +25,7 @@ body {
 
 }
 .header{
-  background-color:#f7f2b4;
+  background-color: #26d0c9;
   color:#fff;
   height:90px;
 
