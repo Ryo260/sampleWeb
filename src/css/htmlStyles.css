@@ -14,6 +14,11 @@ li{
   list-style: none;
 }
 /* クラス */
+.header{
+  background-color: #26d0c9;
+  color:#fff;
+  height:90px;
+}
 
 .headerLogo{       /* クラスは先頭に「.」をつける */
   float: left;      /* リストを横並びにする*/
@@ -21,16 +26,9 @@ li{
   padding:20px 40px; /*上下の余白*/
 }
 
-.headerLi li{
+.headerList li{
   float:left;
   padding:33px 20px;
-}
-
-.header{
-  background-color: #26d0c9;
-  color:#fff;
-  height:90px;
-
 }
 
 .main{
@@ -40,8 +38,7 @@ li{
 
 .footer{
   background-color: #2f5167;
-
-  color: #fff;  
+  color: #fff;
   height: 120px;
   padding: 40px;
 }
@@ -57,4 +54,5 @@ li{
 
 .footerList li {
   padding-bottom:20px;
+  color: #fff;
 }
