@@ -7,20 +7,28 @@ h1 {
 .selected {
   color: blueviolet
 }
+body {
+  font-family: "Avenir Next";
+}
 
 /* クラス */
 
 .header-logo{       /* クラスは先頭に「.」をつける */
   font-size:36px;   /* 文字サイズ */
   float:left;       /* リストを横並びにする*/
+  padding:20px 40px; /*上下の余白*/
 }
-.headerList{
+.headerLi{
+  List-style: none; /* listの「・」を削除 */
   float:left;
+  padding:33px 20px;
 
 }
 .header{
   background-color:#f7f2b4;
+  color:#fff;
   height:90px;
+
 }
 
 .main{
