@@ -9,9 +9,10 @@ h1 {
 }
 
 /* クラス */
-.header-logo{
-  font-size:36px;
-  float:left;
+
+.header-logo{       /* クラスは先頭に「.」をつける */
+  font-size:36px;   /* 文字サイズ */
+  float:left;       /* リストを横並びにする*/
 }
 .headerList{
   float:left;
