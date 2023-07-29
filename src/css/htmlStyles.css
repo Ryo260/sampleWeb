@@ -20,12 +20,12 @@ li{
   font-size:36px;   /* 文字サイズ */
   padding:20px 40px; /*上下の余白*/
 }
-.headerLi{
-  List-style: none; /* listの「・」を削除 */
+
+.headerLi li{
   float:left;
   padding:33px 20px;
-
 }
+
 .header{
   background-color: #26d0c9;
   color:#fff;
