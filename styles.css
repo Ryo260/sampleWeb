@@ -58,3 +58,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+/* アイコンのスタイル設定 */
+.contents-item{
+    float:left;
+
+}
