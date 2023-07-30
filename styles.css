@@ -68,7 +68,7 @@ footer {
 
 /* 画像のスタイル設定 */
 .img_item {
-    width: 100%;
+    width: 300px;
     height: 300px;
     object-fit: cover; /* width, heightといっしょに使います */
     border: 1px solid #111;
