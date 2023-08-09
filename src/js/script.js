@@ -1,7 +1,7 @@
 function addTask(){
   let taskList = document.getElementById('taskList');
   let newTaskInput = document.getElementById('newTaskInput');
-  let taskText = newTaskInput.ariaValueMax.trim(); // タスクのテキスト内容
+  let taskText = newTaskInput.value.trim(); // タスクのテキスト内容。ここでエラーが起きている
 
   if(taskText ===""){
     alert("Please enter a task!");
