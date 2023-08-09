@@ -13,7 +13,6 @@ function getWeather(){
     })
     .then(data=>{
       // 天気の説明を取得
-      console.log(data);
       const weatherDescription = data.current.condition.text;
 
       // 結果を表示
