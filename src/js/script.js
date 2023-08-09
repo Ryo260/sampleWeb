@@ -3,7 +3,7 @@ function addTask(){
   let newTaskInput = document.getElementById('newTaskInput');
   let taskText = newTaskInput.value.trim(); // タスクのテキスト内容。ここでエラーが起きている
 
-  if(taskText ===""){
+  if(taskText ==""){
     alert("Please enter a task!");
     return;
   }
