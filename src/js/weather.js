@@ -13,7 +13,7 @@ function getWeather(){
     })
     .then(data=>{
       const weather = data.weather[0].description;
-      document.getElementById('result').innerText = 'Weather in ${city): ${weather}';
+      document.getElementById('result').innerText = `Weather in ${city}: ${weather}`;
     })
     .catch(error =>{
       document.getElementById('result').innerText = 'Filed to get weather';
