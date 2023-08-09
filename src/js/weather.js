@@ -13,7 +13,7 @@ function getWeather(){
     })
     .then(data=>{
       // 天気の説明を取得
-      const weatherDscription = data.current.condition.text;
+      const weatherDescription = data.current.condition.text;
 
       // 結果を表示
       document.getElementById('result').innerText = `Weather in ${city}: ${weatherDescription}`;
