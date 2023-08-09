@@ -15,7 +15,7 @@ function getWeather(){
       document.getElementById('result').innerText = `Weather in ${city}: ${weather}`;
     })
     .catch(error =>{
-      document.getElementById('result').innerText = 'Filed to get weather';
+      document.getElementById('result').innerText = 'Filed to get weather. Error: ' + error.message;
     })
 }
 
