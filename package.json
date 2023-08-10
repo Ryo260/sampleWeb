@@ -1,0 +1,15 @@
+{
+  "name": "sampleweb",
+  "version": "1.0.0",
+  "description": "sampleweb practice",
+  "main": "index.js",
+  "dependencies": {
+    "marked": "^7.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
