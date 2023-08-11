@@ -1,80 +1,93 @@
 /* 全体のスタイル設定 */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
-    padding: 1em;
+    background-color: #f5f7fa;
+    padding: 2em;
+    margin: 0;
+    color: #333;
 }
 
 /* ヘッダーのスタイル設定 */
 header {
-    background: #333;
+    background: #2a2a2a;
     color: #fff;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* ナビゲーションメニューのスタイル設定 */
 nav {
-    background: #ddd;
-    padding: 15px;
+    background: #fff;
+    padding: 10px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: #2a2a2a;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #007BFF;
 }
 
 /* メインコンテンツのスタイル設定 */
 main {
     margin: 15px 0;
-    min-height: calc(100vh - (ヘッダーの高さ + ナビゲーションの高さ + フッターの高さ + 余分なマージンやパディング));
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 main h2 {
-    color: #333;
-}
-
-main p {
-    color: #666;
+    border-bottom: 2px solid #dee7ec;
+    padding-bottom: 10px;
+    margin-top: 0;
 }
 
 /* フッターのスタイル設定 */
 footer {
-    background: #333;
+    background: #2a2a2a;
     color: #fff;
     text-align: center;
     padding: 15px 0;
-    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* アイコンのスタイル設定 */
-.contents-item{
-    float:left;
-    margin-right:20px;
-
+.contents-item {
+    float: left;
+    margin-right: 20px;
 }
 
 /* 画像のスタイル設定 */
 .img_item {
     width: 100px;
     height: 100px;
-    object-fit: cover; /* width, heightといっしょに使います */
+    object-fit: cover;
     border: 1px solid #111;
+    border-radius: 5px;
+    transition: transform 0.2s;
 }
 
-.section-title{
-    border-bottom: 2px solid #dee7ec;
-    /* font-sizeを28pxにしてください */
-    font-size:28px;
+.img_item:hover {
+    transform: scale(1.05);
 }
