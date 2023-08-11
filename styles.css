@@ -91,3 +91,7 @@ footer {
 .img_item:hover {
     transform: scale(1.05);
 }
+
+.clearfix {
+    clear: both;
+}
