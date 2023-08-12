@@ -1,5 +1,6 @@
 let currentQuestion = 0;
 let score =0;
+let questions = [];
 
 // クイズのデータを取得する
 async function fetchQuizData(){ // asyncとは？
@@ -15,11 +16,10 @@ function displayQuiz(questions) {
   const answersElement = document.getElementById("answers");
 
   // 問題文の設定
-  questionElement.textContent = questions[currentQuestion].question;
-
+  questionElement.textContent = questions[currentQuestion].question;  
   // 回答選択肢の設定
   const answers = [...questions[currentQuestion].incorrect_answers, questions[currentQuestion].correct_answer];
-
+ 
   // 選択肢をシャッフル
   answers.sort(()=>Math.random() - 0.5);
 
@@ -45,6 +45,7 @@ function displayQuiz(questions) {
     });
   });
 }
+
 document.getElementById('next').addEventListener('click', () => {
   currentQuestion++;
   if (currentQuestion < questions.length) {
