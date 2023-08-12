@@ -45,7 +45,17 @@ function displayQuiz(questions) {
     });
   });
 }
-
+document.getElementById('next').addEventListener('click', () => {
+  currentQuestion++;
+  if (currentQuestion < questions.length) {
+      displayQuiz();
+  } else {
+      // クイズ終了時のスコア表示
+      document.getElementById('question').textContent = "クイズ終了！";
+      document.getElementById('score').textContent = `スコア: ${score} / ${questions.length}`;
+      document.getElementById('next').style.display = 'none';
+  }
+});
 
 // 最初にクイズのデータを取得し、表示
 fetchQuizData().then(question =>{
