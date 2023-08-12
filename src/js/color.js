@@ -15,6 +15,9 @@ const changeColorBtn = document.getElementById("changeColorBtn");
 
 // HEX値をRGB値に変換する関数
 function hexToRgb(hex){
+  if(!hex){
+    return null;
+  }
   const shorthandRegex = /^#?([a-f\d])([a-f\d])([a-f\d])$/i;
   hex = hex.replace(shorthandRegex, function(m,r,g,b){
     return r + r + g + g + b + b;
@@ -30,7 +33,7 @@ function hexToRgb(hex){
 
 // ボタンのクリックイベントを設定
 changeColorBtn.addEventListener("click", function(){
-  const colorValue = colorInput.ariaValueMax; // 入力された色の値を取得 ariaValueMaxとvalueの違いは？
+  const colorValue = colorInput.value; // 入力された色の値を取得 ariaValueMaxとvalueの違いは？
   let rgb = hexToRgb(colorValue);
 
   // 入力がRGBの場合は、この処理をスキップ
