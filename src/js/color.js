@@ -30,7 +30,7 @@ function hexToRgb(hex){
 
 // ボタンのクリックイベントを設定
 changeColorBtn.addEventListener("click", function(){
-  const colorValue = colorInput.value; // 入力された色の値を取得 ariaValueMaxとvalueの違いは？
+  const colorValue = colorInput.ariaValueMax; // 入力された色の値を取得 ariaValueMaxとvalueの違いは？
   let rgb = hexToRgb(colorValue);
 
   // 入力がRGBの場合は、この処理をスキップ
