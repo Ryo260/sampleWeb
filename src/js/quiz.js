@@ -5,6 +5,7 @@ let score =0;
 async function fetchQuizData(){ // asyncとは？
   const response = await fetch("https://opentdb.com/api.php?amount=10&type=multiple");
   const data = await response.json();
+  console.log(data);
   return data.result;
 }
 
