@@ -35,6 +35,6 @@ changeColorBtn.addEventListener("click", function () {
     rgb = getRgbFromColorName(colorValue);
   }
 
-  const gradientColor = `rgb(${Math.min(rgb[0] + 100, 255)}, ${Math.min(rgb[1] + 100, 255)}, ${Math.min(rgb[2] + 100, 255)})`;
+  const gradientColor = `rgb(${Math.min(rgb[0] + 150, 255)}, ${Math.min(rgb[1] + 150, 255)}, ${Math.min(rgb[2] + 150, 255)})`;
   document.body.style.background = `linear-gradient(to right, rgb(${rgb[0]}, ${rgb[1]}, ${rgb[2]}), ${gradientColor})`;
 });
