@@ -1,0 +1,16 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #3498db, #8e44ad); /* グラデーション背景 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  transition: background 0.5s; /* 背景色が滑らかに変化するように */
+}
+
+.container {
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
