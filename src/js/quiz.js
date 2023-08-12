@@ -9,7 +9,7 @@ async function fetchQuizData(){ // asyncとは？
 }
 
 // クイズの表示
-function displayQuiz(quetions) {
+function displayQuiz(questions) {
   const questionElement = document.getElementById("question");
   const answersElement = document.getElementById("answers");
 
@@ -17,7 +17,7 @@ function displayQuiz(quetions) {
   questionElement.textContent = questions[currentQuestion].question;
 
   // 回答選択肢の設定
-  const answers = [...quetions[currentQuestion].incorrect_answers, questions[currentQuestion].correct_answer];
+  const answers = [...questions[currentQuestion].incorrect_answers, questions[currentQuestion].correct_answer];
 
   // 選択肢をシャッフル
   answers.sort(()=>Math.random() - 0.5);
