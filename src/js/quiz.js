@@ -9,7 +9,7 @@ async function fetchQuizData(){ // asyncとは？
 }
 
 // クイズの表示
-function displayQuiz(quetion) {
+function displayQuiz(quetions) {
   const questionElement = document.getElementById("question");
   const answersElement = document.getElementById("answers");
 
