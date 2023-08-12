@@ -1,6 +1,6 @@
 function getWeather(){
   const city = document.getElementById('city').value;
-  const apiKey = '6f5b14df8f964d2799543704230908' // 後から記載
+  const apiKey = '' // 後から記載
 
   const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}&aqi=no`; //適切なエンドポイントを記載
 
