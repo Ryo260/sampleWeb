@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="/sampleWeb/src/css/colorpick.css">
 </head>
 <body>
+  <div id="colorPreview">
   <!-- ようやく -->
   <p>このアプリはカラーコードを入力して色を確認したり、スライダーでRGB値を変更して色を動的に変えることができます。</p>
 
@@ -18,10 +19,7 @@
   <p>R: <input type="range" id="rRange" min="0" max="255" oninput="updateRGB()"></p>
   <p>G: <input type="range" id="gRange" min="0" max="255" oninput="updateRGB()"></p>
   <p>B: <input type="range" id="bRange" min="0" max="255" oninput="updateRGB()"></p>
-
-  <!-- 色のプレビューエリア  -->
-  <div id="colorPreview"></div>
-
+  
   <script src="/sampleWeb/src/js/colorpick.js"></script>
 </body>
 </html>
