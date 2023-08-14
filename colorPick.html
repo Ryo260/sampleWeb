@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>colorPick</title>
+  <link rel="stylesheet" href="/sampleWeb/src/css/colorpick.css">
+</head>
+<body>
+  <!-- ようやく -->
+  <p>このアプリはカラーコードを入力して色を確認したり、スライダーでRGB値を変更して色を動的に変えることができます。</p>
+
+  <!-- カラーコードを入力 -->
+  <input type="text" id="colorInput" placeholder="色を入力(例: #ff5733)">
+  <button onclick="updateColor()">色を更新</button>
+
+  <!-- RGB値のスライダー -->
+  <p>R: <input type="range" id="rRange" min="0" max="255" oninput="updateRGB()"></p>
+  <p>G: <input type="range" id="gRange" min="0" max="255" oninput="updateRGB()"></p>
+  <p>B: <input type="range" id="bRange" min="0" max="255" oninput="updateRGB()"></p>
+
+  <!-- 色のプレビューエリア  -->
+  <div id="colorPreview"></div>
+
+  <script src="/sampleWeb/src/js/colorpick.js"></script>
+</body>
+</html>

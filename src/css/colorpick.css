@@ -1,0 +1,11 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  padding: 20px;
+}
+
+#colorPreview {
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000;
+}
