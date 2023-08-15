@@ -8,9 +8,17 @@
 </head>
 <body>
   <div class="converter">
-    <select name="" id="fromCurrency"></select>
+    <select name="" id="fromCurrency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="JPY">JPY</option>
+    </select>
     <input type="number" id="amount" placeholder="金額を入力">
-    <select name="" id="toCurrency"></select>
+    <select name="" id="toCurrency">
+      <option value="USD">USD</option>
+      <option value="EUR">EUR</option>
+      <option value="JPY">JPY</option>
+    </select>
     <button onclick="convertCurrency()">変換</button>
     <div id="result">結果がこちらに表示されます。</div>
   </div>
