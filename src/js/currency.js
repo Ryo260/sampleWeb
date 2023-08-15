@@ -10,7 +10,7 @@ async function fetchExchangeRate(from,to){
 // 通貨を変換する関数
 
 async function convertCurrency(){
-  const form = document.getElementById("fromCurrency").value;
+  const from = document.getElementById("fromCurrency").value;
   const to = document.getElementById("toCurrency").value;
   const amount = document.getElementById("amount").value;
 
