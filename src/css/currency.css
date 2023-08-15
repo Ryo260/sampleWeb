@@ -1,0 +1,16 @@
+body {
+  /* フォントをArialまたはsans-serifに設定 */
+  font-family: 'Arial', sans-serif;  
+  /* 背景色を線形グラデーションに設定。左側の青から右側のピンクに変化 */
+  background: linear-gradient(90deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+}
+
+.converter {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+}
+
+/* その他のスタイル定義... */
