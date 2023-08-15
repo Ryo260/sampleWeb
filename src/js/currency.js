@@ -4,6 +4,7 @@ async function fetchExchangeRate(from,to){
   const url = `https://api.exchangeratesapi.io/latest?base=${from}`;
   const response = await fetch(url);
   const data = await response.json();
+  console.log(data);
   return data.rates[to];
 }
 
